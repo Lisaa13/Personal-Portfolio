@@ -220,6 +220,7 @@ body{
     max-width: 900px;
     margin: 50px auto;
     text-align: center;
+    flex-wrap: wrap;
 }
 
 .experience h2 {
@@ -288,4 +289,27 @@ footer{
         grid-template-columns: repeat(1,1fr);
         grid-template-rows: repeat(4,auto);
      }
+     .timeline {
+        flex-direction: column; /* Stack experience items vertically */
+        align-items: center;
+    }
+
+    .timeline-item {
+        width: 90%; /* Make experience cards full width */
+    }
+
+    /* Adjust experience heading */
+    .experience h2 {
+        font-size: 1.8rem;
+        left: 0; 
+        top: 0;   
+        text-align: center;
+    }
+
+    /* Adjust footer for mobile */
+    footer p {
+        font-size: 14px;
+        padding: 10px;
+        text-align: center;
+    }
 }
