@@ -1,0 +1,288 @@
+:root{
+    --purple: #800080;
+    --purple-light: #D8BFD8;
+    --dark-blue: #003366;    
+    --blue: #0000FF;
+    --sky-blue: #87CEEB;
+    --light-blue: #ADD8E6;
+    --dark-pink: #C71585;
+    --dark-magenta: #8B008B;
+    --light-green: #90EE90;
+    --light-purple: #D8BFD8;
+    --light-brown:#CC8C8C;
+    --lighter-brown:#f5ece9;
+    --main-color: #ff5733; 
+    --second-bg-color: #1e1e1e;
+    --bg-color: #2c2c2c;
+
+    --primary-color: #212121;
+    --background-color: #111;
+    --font: sans-serif;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: poppins,sans-serif;
+}
+body{
+    background: #DAB1DA;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100%;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    position: relative;
+}
+.profile-card{
+    background: #7A5980;
+    width: 400px;
+    height: 1000px;
+    padding: 3rem;
+    border-radius: 10px;
+    min-height: 400px;
+    position: relative;
+    color: #fff;
+    margin: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.profile-card .profile-pic{
+    margin-top: 15px;
+    overflow: hidden;
+}
+.profile-card .profile-pic img{
+    border-radius: 10px;
+    width: 230px;  
+    height: 400px; 
+    object-fit: cover;
+}
+.profile-card .profile-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+.profile-details .intro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.profile-details .intro h2{
+    margin-top: 20px;
+}
+.profile-details .intro h4{
+    background: #533B4D;
+    font-weight: 400;
+    border-radius: 4px;
+    padding: 5px 10px;
+    margin: 8px;
+}
+.profile-details .intro .social{
+    margin-top: 10px;
+    margin-bottom: 25px;
+
+}
+.profile-details .intro .social i{
+    color: #ddd;
+    font-size: 16px;
+    background-color: #B48E92;
+    margin: 5px;
+    height: 35px;
+    width: 35px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.profile-details .intro i:hover{
+    transform: scale(1.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.profile-card .contact-info{
+    background-color: #533B4D;
+    padding: 15px;
+    border-radius: 10px;
+    width: 100%;
+}
+.profile-card .contact-info .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+.contact-info .row .icon{
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    border-radius: 5px;
+    background-color: #B48E92;
+    text-align: center;
+    color: #fff;
+    transition: 0.5s;
+}
+.row .icon:hover{
+    transform: scale(1.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.row .content{
+    min-width: 70%;
+}
+.row .content .span{
+    font-size: 12px;
+}
+.download-btn{
+    background: linear-gradient(45deg, #bd64a6, #bd64a6);
+    color: #fff;
+    padding: 1rem 3rem;
+    border-radius: 30px;
+    margin-top: 1.5rem;
+    border: none;
+}
+/******BIO SECTION*****/
+
+.about{
+    background-color: #7A5980;
+    max-width: 910px;
+    height: 1000px;
+    padding: 2rem 3rem;
+    border-radius: 10px;
+}
+.about h1{
+    color: #f2f2f2;
+    margin-bottom: 1.1rem;
+    position: relative;
+    display: inline block;
+    font-size: 3.5rem;
+}
+.about h1::after{
+    position: absolute;
+    content: "";
+    top: 50%;
+    right: -50%;
+    width: 45%;
+    height: 3px;
+    background: linear-gradient(45deg, #f64c57, #e21b5a);
+}
+.about p{
+    color: #190502;
+    margin: 1.5rem 0;
+    
+}
+.about h2{
+    color: #f2f2f2;
+    font-size: 2rem;
+    margin: 0.5rem 0;
+}
+.about .work{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+}
+.work .workbox{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+    border: 1px solid #B48E92;
+    padding: 1rem;
+    margin: 1rem;
+}
+.workbox img{
+        width: 65px;  
+        height: 65px; 
+        object-fit: cover; 
+}
+.work .workbox .desc{
+    width: 75%;
+    color: #555;
+}
+.work .workbox .desc h3{
+    color: #f2f2f2;
+    margin-bottom: 3px;
+}
+.work .workbox .desc p{
+    margin: 0px;
+}
+
+/* Work Experience Timeline */
+.experience {
+    max-width: 900px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.experience h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: white;
+    position: relative;
+    left: -20px; 
+    top: -20px;   
+    text-align: left;  
+}
+
+.timeline {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.timeline-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: #533B4D;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 45%; 
+}
+
+.timeline-content h3 {
+    margin: 0;
+    font-size: 1.3rem;
+    color: #B38992;
+}
+
+.timeline-content span {
+    font-size: 0.9rem;
+    color: white;
+    display: block;
+    margin-top: 5px;
+}
+
+.timeline-content p {
+    color: white;
+    margin-top: 10px;
+}
+
+/****Responsive design****/
+@media(max-width:768px)
+{
+      
+     .about{
+        width: 1005;
+        max-width: 400px;
+        padding: 1rem;
+        margin: 1rem;
+     }
+     .about h1{
+         font-size: 2.2rem;
+     }
+     .about .work{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(4,auto);
+     }
+}
